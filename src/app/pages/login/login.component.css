@@ -1,0 +1,53 @@
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-top: 100px;
+}
+.login-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.login-container .form-control {
+    margin-bottom: 10px;
+}
+.login-container .btn {
+    background-color: #20c997;
+    color: white;
+    width: 100%;
+}
+.login-container .register-link {
+    margin-top: 10px;
+    font-size: 12px;
+}
+.login-container .register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+.form-label {
+    text-align: left;
+    display: block;
+}
+.content {
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}

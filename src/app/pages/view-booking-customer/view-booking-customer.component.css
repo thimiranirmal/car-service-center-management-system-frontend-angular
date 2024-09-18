@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #ff6f61;
+}
+.navbar-brand, .nav-link, .navbar-text {
+    color: white !important;
+}
+.navbar-text {
+    margin-right: 10px;
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.form-label {
+    font-weight: bold;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section h5 {
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+.btn-back {
+    background-color: #0000ff;
+    color: white;
+}

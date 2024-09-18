@@ -1,0 +1,21 @@
+.container {
+    margin-top: 20px;
+}
+.section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.owner-details {
+    color: blue;
+}
+.vehicle-details {
+    color: red;
+}
+.employee-details {
+    color: green;
+}
+.btn-assign {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}

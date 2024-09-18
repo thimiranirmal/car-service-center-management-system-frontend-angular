@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Manage Cagetory</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Category ID</th>
+                <th>Category Name</th>
+                <th>Category Description</th>
+                <th>Category Image</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of categoryList; track $index) {
+                <tr>
+                    <td>{{ item.cat_id }}</td>
+                    <td>{{ item.cat_name }}</td>
+                    <td>{{ item.cat_desc }}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+            
+            
+        </tbody>
+    </table>
+</div>

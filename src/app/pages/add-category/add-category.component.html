@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Add Category</h3>
+    
+        <div class="mb-3">
+            <label for="categoryName"  class="form-label"  >Category Name</label>
+            <input type="text" class="form-control" [(ngModel)]="categoryObj.cat_name" id="cat_name" name="cat_name">
+        </div>
+        <div class="mb-3">
+            <label for="categoryDescription"  class="form-label"  >Category Description</label>
+            <textarea class="form-control" name="cat_desc" id="cat_desc" rows="3" [(ngModel)]="categoryObj.cat_desc"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="categoryImage" class="form-label">Category Image</label>
+            <input type="text" class="form-control" id="categoryImage">
+        </div>
+        <button type="submit" class="btn-save" (click)="createCategory()">Save</button>
+    
+</div>

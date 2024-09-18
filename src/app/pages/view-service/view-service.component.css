@@ -1,0 +1,24 @@
+.container {
+    margin-top: 50px;
+}
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.owner-details {
+    color: blue;
+}
+.vehicle-details {
+    color: red;
+}
+.employee-details {
+    color: green;
+}
+.form-control {
+    margin-bottom: 10px;
+}
+.btn-accept {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}

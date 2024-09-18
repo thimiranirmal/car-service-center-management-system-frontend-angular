@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Manage Make</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Make ID</th>
+                <th>Make Name</th>
+                <th>Make Description</th>
+                <th>Make Image</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of makeList; track $index) {
+                <tr>
+                    <td>{{item.make_id}}</td>
+                    <td>{{item.make_name}}</td>
+                    <td>{{item.make_description}}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }
+            
+            
+        </tbody>
+    </table>
+</div>

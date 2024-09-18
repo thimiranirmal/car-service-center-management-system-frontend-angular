@@ -1,0 +1,44 @@
+.container {
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+.section-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+.owner-details {
+    color: blue;
+}
+.vehicle-details {
+    color: red;
+}
+.add-button {
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.submit-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}

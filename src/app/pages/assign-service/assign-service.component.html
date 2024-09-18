@@ -1,0 +1,71 @@
+<div class="container">
+    <h1 >Assign Service</h1>
+    <!-- @for (item of booking; track $index) { -->
+    <form>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="section-title owner-details">Owner Details</div>
+                <div class="mb-3">
+                    <label for="ownerName" class="form-label">Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="booking.customerId" name="customerId" disabled id="ownerName">
+                </div>
+                <div class="mb-3">
+                    <label for="ownerEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control"  id="ownerEmail">
+                </div>
+                <div class="mb-3">
+                    <label for="ownerMobile" class="form-label">Mobile No</label>
+                    <input type="text" class="form-control"  id="ownerMobile">
+                </div>
+                <div class="mb-3">
+                    <label for="ownerAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="ownerAddress">
+                </div>
+                <div class="mb-3">
+                    <label for="customerMessage" class="form-label">Customer Message</label>
+                    <textarea class="form-control" id="customerMessage" [(ngModel)]="booking.message" name="message" disabled rows="4"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <div class="section-title vehicle-details">Vehicle Details</div>
+                <div class="mb-3">
+                    <label for="vehicleMake" class="form-label">Vehicle Make</label>
+                    <input type="text" class="form-control" [(ngModel)]="booking.vehicleMake" name="vehicleMake" disabled id="vehicleMake">
+                </div>
+                <div class="mb-3">
+                    <label for="vehicleModel" class="form-label">Vehicle Model</label>
+                    <input type="text" class="form-control"  [(ngModel)]="booking.vehicleModel" name="vehicleModel" disabled id="vehicleModel">
+                </div>
+                <div class="mb-3">
+                    <label for="vehicleNo" class="form-label">Vehicle No</label>
+                    <input type="text" class="form-control" [(ngModel)]="booking.vehicleNo" name="vehicleNo" disabled id="vehicleNo">
+                </div>
+                <div class="mb-3">
+                    <label for="manufacturedYear" class="form-label">Manufactured Year</label>
+                    <input type="text" class="form-control" [(ngModel)]="booking.vehicleManufacturedYear" name="vehicleManufacturedYear" disabled id="manufacturedYear">
+                </div>
+                <div class="mb-3">
+                    <label for="preferredDate" class="form-label">Preferred Date</label>
+                    <input type="date" class="form-control" [(ngModel)]="booking.bookingDate" name="bookingDate" disabled id="preferredDate">
+                </div>
+                <div class="mb-3">
+                    <label for="preferredTime" class="form-label">Preferred Time</label>
+                    <input type="time" class="form-control" [(ngModel)]="booking.bookingTime" name="bookingTime" disabled id="preferredTime">
+                </div>
+                <div class="section-title employee-details">Employee Details</div>
+                <div class="mb-3">
+                    <label for="employeeName" class="form-label">Employee Name</label>
+                    <input type="text" class="form-control" id="employeeName">
+                </div>
+                <div class="mb-3">
+                    <label for="employeeComment" class="form-label">Comment</label>
+                    <input type="text" class="form-control" id="employeeComment">
+                </div>
+            </div>
+        </div>
+        <div class="float-end m-4">
+            <button type="submit" class="btn btn-assign">Assign</button>
+        </div>
+    </form>
+    <!-- } -->
+</div>

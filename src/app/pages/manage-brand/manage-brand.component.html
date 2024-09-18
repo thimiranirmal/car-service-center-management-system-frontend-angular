@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Manage Brand</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Brand ID</th>
+                <th>Brand Name</th>
+                <th>Brand Description</th>
+                <th>Brand Image</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of brandList; track $index) {
+                <tr>
+                    <td>{{item.brand_id}}</td>
+                    <td>{{item.brand_name}}</td>
+                    <td>{{item.brand_description}}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            }  
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,65 @@
+.sidebar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+}
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sidebar .welcome {
+    text-align: right;
+    margin-bottom: 20px;
+}
+.sidebar .welcome span {
+    margin-right: 10px;
+}
+.sidebar .menu-item {
+    margin-bottom: 0;
+}
+.sidebar .menu-item h2 {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.sidebar .menu-item .dropdown-toggle::after {
+    margin-left: 10px;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header .welcome {
+    display: flex;
+    align-items: center;
+}
+.header .welcome span {
+    margin-right: 10px;
+}
+.accordion-body{
+    background-color: #56d1d1d8;
+    
+}
+@media (max-width: 768px) {
+    .sidebar {
+        height: auto;
+        padding: 10px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .welcome {
+        margin-top: 10px;
+    }
+}

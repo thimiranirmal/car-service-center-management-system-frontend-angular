@@ -1,0 +1,18 @@
+<div class="container">
+    <h3>Add Make</h3>
+    <form>
+        <div class="mb-3">
+            <label for="makeName" class="form-label">Make Name</label>
+            <input type="text" [(ngModel)]="makeObj.make_name" name="make_name" class="form-control" id="makeName">
+        </div>
+        <div class="mb-3">
+            <label for="makeDescription" class="form-label">Make Description</label>
+            <textarea class="form-control" [(ngModel)]="makeObj.make_description" name="make_description" id="makeDescription" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="makeImage" class="form-label">Make Image</label>
+            <input type="text" class="form-control" id="makeImage">
+        </div>
+        <button type="submit" class="btn btn-save" (click)="createMake()">Save</button>
+    </form>
+</div>

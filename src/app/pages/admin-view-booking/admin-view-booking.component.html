@@ -1,0 +1,97 @@
+<div class="container1">
+    <div class="table-container">
+        <h1>Manage Bookings</h1>
+        <div class="table-title">New Bookings</div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Booking Id</th>
+                    <th>Customer Name</th>
+                    <th>Mobile</th>
+                    <th>Vehicle Make</th>
+                    <th>Vehicle Model</th>
+                    <th>Preffered Date</th>
+                    <th>Preffered Time</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of bookingList; track $index) {
+                    @if (item.bookingStatus=="planned") {
+                        <tr>
+                            <td>{{item.bookingId}}</td>
+                            <td>{{item.customerId}}</td>
+                            <td>{{item.Mobile}}</td>
+                            <td>{{item.vehicleMake}}</td>
+                            <td>{{item.vehicleModel}}</td>
+                            <td>{{item.bookingDate}}</td>
+                            <td>{{item.bookingTime}}</td>
+                            <td>{{item.message}}</td>
+                            <td><span class="badge text-bg-warning">{{item.bookingStatus}}</span></td>
+                            <td><i class="bi bi-pencil-square m-3"></i><i class="bi bi-eye m-3" (click)="viewItem(item.bookingId)"></i><i class="bi bi-twitter-x m-3"></i></td>
+                        </tr>
+                    }  
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="table-container">
+        <div class="table-title">On Going and Completed</div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Booking Id</th>
+                    <th>Customer Name</th>
+                    <th>Mobile</th>
+                    <th>Vehicle Make</th>
+                    <th>Vehicle Model</th>
+                    <th>Preffered Date</th>
+                    <th>Preffered Time</th>
+                    <th>Message</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thimira Nirmal</td>
+                    <td>0714343368</td>
+                    <td>Japan</td>
+                    <td>Corolla</td>
+                    <td>12/03/2024</td>
+                    <td>02.00 pm</td>
+                    <td>Full Body Wash</td>
+                    <td><span class="badge text-bg-success">Completed</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Thimira Nirmal</td>
+                    <td>0714343368</td>
+                    <td>Japan</td>
+                    <td>Corolla</td>
+                    <td>12/03/2024</td>
+                    <td>02.00 pm</td>
+                    <td>Full Body Wash</td>
+                    <td><span class="badge text-bg-info">On going</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Thimira Nirmal</td>
+                    <td>0714343368</td>
+                    <td>Japan</td>
+                    <td>Corolla</td>
+                    <td>12/03/2024</td>
+                    <td>02.00 pm</td>
+                    <td>Full Body Wash</td>
+                    <td><span class="badge text-bg-primary">Approved</span></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Manage Service Type</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Service Type ID</th>
+                <th>Service Type Name</th>
+                <th>Service Type Description</th>
+                <th>Service Type Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of serviceTypeList; track $index) {
+                <tr>
+                    <td>{{item.serviceTypeId}}</td>
+                    <td>{{item.serviceTypeName}}</td>
+                    <td>Body wash all Of things</td>
+                    <td>{{item.servicePrice}}</td>
+                    <td></td>
+                </tr>
+            }
+            
+            
+        </tbody>
+    </table>
+</div>

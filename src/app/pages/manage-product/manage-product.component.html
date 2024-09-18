@@ -1,0 +1,36 @@
+
+
+<div class="container">
+    <h1>Manage Product</h1>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Product Description</th>
+                <th>Product Image</th>
+                <th>Price</th>
+                <th>Category ID</th>
+                <th>Brand ID</th>
+                <th>Make ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of productList; track $index) {
+                <tr>
+                    <td>{{item.product_id}}</td>
+                    <td>{{item.product_name}}</td>
+                    <td>{{item.product_description}}</td>
+                    <td>{{item.product_image}}</td>
+                    <td>{{item.product_name}}</td>
+                    <td>{{item.category.cat_name}}</td>
+                    <td>{{item.brand.brand_name}}</td>
+                    <td>{{item.make.make_name}}</td>
+                    <td></td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>

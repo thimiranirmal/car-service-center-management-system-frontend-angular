@@ -1,0 +1,31 @@
+.container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.owner-details {
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.vehicle-details {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-label {
+    font-weight: bold;
+}
+.btn-submit {
+    background-color: #0000ff;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+}
